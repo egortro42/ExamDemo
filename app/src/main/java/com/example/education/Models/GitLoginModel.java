@@ -1,7 +1,5 @@
 package com.example.education.Models;
 
-import android.util.Log;
-
 import com.example.education.GitHub.AccessToken;
 import com.example.education.GitHub.GitHubClient;
 import com.example.education.Presenters.GitLoginPresenter;

@@ -1,7 +1,6 @@
 package com.example.education.Models;
 
 import android.util.Base64;
-import android.util.Log;
 
 import com.example.education.GitHub.GitHubClient;
 import com.example.education.GitHub.JsonResponseModels.ResponseCheckAuth;

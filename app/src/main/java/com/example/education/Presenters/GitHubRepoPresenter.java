@@ -11,7 +11,7 @@ import com.example.education.Models.GitRepoModel;
 import java.util.List;
 
 public class GitHubRepoPresenter {
-    private static String repo_name = "";
+    private static String repo_name = "egortro42";
     private static SharedPreferences mSettings;
     private GitRepoModel gitHub_model;
     private static ListView listView;
