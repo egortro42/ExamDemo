@@ -21,7 +21,10 @@
             android:title="О смартфоне" />
         <item
             android:id="@+id/nav_contacts"
-            android:title="Контакты" />
+            android:title="Работа с контактом" />
+        <item
+            android:id="@+id/nav_contactsview"
+            android:title="Список контактов" />
         <item
             android:id="@+id/nav_logout"
             android:title="Выход из Github" />

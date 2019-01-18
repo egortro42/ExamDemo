@@ -17,6 +17,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.example.education.Models.ContactVO;
 import com.example.education.Presenters.GitLogoutPresenter;
 import com.example.education.R;
 import com.example.education.SharedPrefernces;
@@ -28,8 +29,10 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         MapFragment.OnFragmentInteractionListener,
         ContactsFragment.OnFragmentInteractionListener,
+        AllContactsFragment.OnListFragmentInteractionListener,
         GitHubFragment.OnFragmentInteractionListener,
-        AboutFragment.OnFragmentInteractionListener, ChooseRepoFragment.OnFragmentInteractionListener,
+        AboutFragment.OnFragmentInteractionListener,
+        ChooseRepoFragment.OnFragmentInteractionListener,
         ChooseLocationFragment.OnFragmentInteractionListener,
         AcceleCameraFragment.OnFragmentInteractionListener {
 
@@ -106,6 +109,8 @@ public class MainActivity extends AppCompatActivity
             fragmentClass = AboutFragment.class;
         } else if (id == R.id.nav_contacts) {
             fragmentClass = ContactsFragment.class;
+        } else if (id == R.id.nav_contactsview) {
+            fragmentClass = AllContactsFragment.class;
         } else if (id == R.id.nav_logout) {
             SharedPreferences mSettings = getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE);
             GitLogoutPresenter gitLogoutPresenter = new GitLogoutPresenter(mSettings, this);
@@ -137,5 +142,4 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
 }

@@ -20,7 +20,7 @@ public class GitLoginActivity extends AppCompatActivity {
     SharedPrefernces token_prefernces;
 
     private Intent getIntentBrowser() {
-        String clientId = "401a1fd5124c8b95d2eb";
+        String clientId = "fdd463cdcc2798d2b42a";
         return new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/login/oauth/authorize" +
                 "?client_id=" + clientId + "&scope=repo&redirect_uri=" + redirectUri));
     }

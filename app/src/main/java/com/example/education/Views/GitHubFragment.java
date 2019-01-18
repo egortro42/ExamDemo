@@ -36,7 +36,6 @@ public class GitHubFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         View view = inflater.inflate(R.layout.git_hub_fragment, container, false);
         listView = (ListView) view.findViewById(R.id.pagination_list);
         SharedPreferences mSettings = getActivity().getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE);

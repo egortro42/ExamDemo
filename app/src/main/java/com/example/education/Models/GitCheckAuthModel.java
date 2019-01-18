@@ -17,7 +17,7 @@ import retrofit2.Retrofit;
 
 public class GitCheckAuthModel {
     private String TAG = "CheckAuth";
-    private String clientId = "401a1fd5124c8b95d2eb";
+    private String clientId = "fdd463cdcc2798d2b42a";
 
 
     public Observable<ResponseCheckAuth> getObservable(Retrofit retrofit, String code){
@@ -57,7 +57,7 @@ public class GitCheckAuthModel {
     }
 
     private String getHeaderValue() {
-        String clientSecret = "efecdbded42a8ddc52588cdd8d0da239736e7412";
+        String clientSecret = "6de2ac25ff164d9e6ec1db609d640c89659a6511";
         String basic_auth = clientId + ":" + clientSecret;
         byte[] data = new byte[0];
         try {

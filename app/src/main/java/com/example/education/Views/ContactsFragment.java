@@ -32,11 +32,11 @@ public class ContactsFragment extends Fragment implements View.OnClickListener{
 
     public ContactsFragment() {}
 
-    public static ContactsFragment newInstance(String param1, String param2) {
-        ContactsFragment fragment = new ContactsFragment();
-        Bundle args = new Bundle();
-        return fragment;
-    }
+//    public static ContactsFragment newInstance(String param1, String param2) {
+//        ContactsFragment fragment = new ContactsFragment();
+//        Bundle args = new Bundle();
+//        return fragment;
+//    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

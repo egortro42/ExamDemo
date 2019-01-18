@@ -24,7 +24,7 @@ import java.util.List;
 public class MapPresenter {
     private MapObjectCollection mapObjects;
     private MapView mapView;
-    private Point ROUTE_START_LOCATION = new Point(55.746963, 37.863387);
+    private Point ROUTE_START_LOCATION = new Point(55.919115, 37.973925);
     private Point ROUTE_END_LOCATION = new Point(55.793288, 37.700819); //стромынка
     private DrivingSession drivingSession;
     private DrivingRouter drivingRouter;

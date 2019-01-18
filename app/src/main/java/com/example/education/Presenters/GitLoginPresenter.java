@@ -24,12 +24,12 @@ public class GitLoginPresenter {
         context = some_ontext;
     }
 
-    public void setActivity(Activity activity) {
-        this.activity = activity;
+    private void setActivity(Activity activity) {
+        GitLoginPresenter.activity = activity;
     }
 
     public static void setAcessToken(String code){
-        if(code != null) {
+        if(code != null && activity != null) {
             token_prefernces.PutAccessToken(code);
             SharedPrefernces token_prefernces;
             token_prefernces = new SharedPrefernces(mSettings);
@@ -43,7 +43,7 @@ public class GitLoginPresenter {
         }
     }
 
-    public static Intent getIntent(String userName, String userType){
+    private static Intent getIntent(String userName, String userType){
         Intent intentMain = new Intent(context, MainActivity.class);
         intentMain.putExtra("UserName", userName);
         intentMain.putExtra("UserType", userType);
@@ -56,9 +56,9 @@ public class GitLoginPresenter {
         RetrofitClient retrofitClient = new RetrofitClient();
         Retrofit retrofit = retrofitClient.getRetrofitRXAct();
         GitLoginModel gitLoginModel = new GitLoginModel();
-        String clientId = "401a1fd5124c8b95d2eb";
-        String clientSecret = "efecdbded42a8ddc52588cdd8d0da239736e7412";
+        String clientId = "fdd463cdcc2798d2b42a";
+        String clientSecret = "6de2ac25ff164d9e6ec1db609d640c89659a6511";
         gitLoginModel.getLogin(retrofit, clientId, clientSecret, code);
-
+        Toast.makeText(activity, "Вы вошли в свой аккаунт GitHub", Toast.LENGTH_SHORT).show();
     }
 }

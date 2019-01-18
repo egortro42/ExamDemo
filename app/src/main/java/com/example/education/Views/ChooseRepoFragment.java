@@ -65,7 +65,7 @@ public class ChooseRepoFragment extends Fragment implements View.OnClickListener
         View view = inflater.inflate(R.layout.choose_repo_fragment, container, false);
         button = view.findViewById(R.id.button);
         editText = view.findViewById(R.id.editText);
-        editText.setText("elizavetamikhailova");
+        editText.setText("egortro42");
         button.setOnClickListener(this);
         return view;
     }
